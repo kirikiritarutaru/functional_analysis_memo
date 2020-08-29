@@ -1,0 +1,97 @@
+機械学習のための<br>関数解析学の基礎
+
+2020-08-29
+
+---
+
+## 目的
+- 関数解析学をまとめる
+- 機械学習を見通しよく理解することを目的とする
+- 集合，線形代数，微分積分（特に，ルベーグ積分），確率論の基礎を過程する
+
+---
+
+## 記号の約束
+- $\mathbb{Q}$，$\mathbb{R}$，$\mathbb{C}$を有理数，実数，複素数とする．
+- $V$をベクトル空間とする．
+- $\mathcal{B}$をバナッハ空間とする．
+- $\mathcal{H}$をヒルベルト空間とする．
+
+---
+
+## 内積の定義
+
+---
+
+## 部分空間の定義
+
+---
+
+## 直交の定義
+
+---
+
+## 有界線形汎関数の定義
+
+---
+
+## リースの表現定理
+
+---
+
+## ニューラルネットワークの普遍性定理
+
+[Cybenko, George. "Approximation by superpositions of a sigmoidal function." Mathematics of control, signals and systems 2.4 (1989): 303-314.][cybenko]
+
+***Def*** sigmoidal関数<br>
+関数$\sigma:\mathbb{R} \rightarrow \mathbb{R}$が次の条件をみたすとき，sigmoidal関数と定義する．
+
+$$
+  \sigma \rightarrow
+    \begin{cases}
+      1 & (t \rightarrow +\infty) \\\\
+      0 & (t \rightarrow -\infty)
+    \end{cases}
+$$
+
+***Thm*** 普遍性定理<br>
+$\sigma:\mathbb{R} \rightarrow \mathbb{R}$を連続なsigmoidal関数とすると，
+$$
+  G(x) = \sum^N\_{j=1} \alpha\_j \sigma(\langle x,y\_j \rangle + \theta\_j)
+$$
+という形をした$X$上の関数全体の集合$C(X)$で稠密になる．
+
+すなわち，任意の$f \in C(X)$と任意の正数$\epsilon$に対して，上の形で表現される関数$G$を適当にとれば，
+$$
+  \forall x \in X,|f(x)-G(x)|< \epsilon
+$$
+が成立する．ここで$\alpha\_j \in \mathbb{R}, y\_j \in \mathbb{R}^n$であり，$\langle x,y \rangle$は内積である．
+
+[鈴木先生のスライド][taiji2]より概説を引用
+
+---
+
+## ガウス過程回帰
+
+---
+
+
+## 再生核ヒルベルト空間（RKHS）
+
+---
+
+## 再生核の定義
+
+---
+
+## RKHSにおけるガウス過程回帰の理解
+
+---
+
+## 参考資料
+- [深層学習の数理　大阪大学集中講義　鈴木大慈][taiji1]
+- [深層学習の数理：カーネル法，スパース推定との接点　鈴木大慈][taiji2]
+
+[cybenko]:https://link.springer.com/article/10.1007/BF02551274
+[taiji1]:https://www.slideshare.net/trinmu/ss-161240890
+[taiji2]:https://www.slideshare.net/trinmu/ss-237399755

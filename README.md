@@ -1,1 +1,2 @@
 # functional_analysis_memo
+機械学習のための関数解析学の基礎のまとめ
