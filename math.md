@@ -89,13 +89,21 @@ $$
 ---
 
 ## 参考資料
-- [固有値問題30講(志賀浩二)]
-- [ルベーグ積分30講(志賀浩二)]
-- [工学のための関数解析(山田功)]
-- [工学系の関数解析(小川英光)]
-- [深層学習の数理　大阪大学集中講義　鈴木大慈][taiji1]
-- [深層学習の数理：カーネル法，スパース推定との接点　鈴木大慈][taiji2]
+- [「集合と位相」をなぜ学ぶのか ― 数学の基礎として根づくまでの歴史　(藤田博司)][fujita]
+- [固有値問題30講　(志賀浩二)][shiga1]
+- [ルベーグ積分30講　(志賀浩二)][shiga2]
+- [測度・確率・ルベーグ積分 応用への最短コース　(原啓介)][hara]
+- [工学のための関数解析　(山田功)][yamada]
+- [工学系の関数解析　(小川英光)][ogawa]
+- [深層学習の数理　大阪大学集中講義　(鈴木大慈)][taiji1]
+- [深層学習の数理：カーネル法，スパース推定との接点　(鈴木大慈)][taiji2]
 
 [cybenko]:https://link.springer.com/article/10.1007/BF02551274
+[fujita]:https://gihyo.jp/book/2018/978-4-7741-9612-1
+[shiga1]:https://www.asakura.co.jp/books/isbn/978-4-254-11485-0/
+[shiga2]:https://www.asakura.co.jp/books/isbn/978-4-254-11484-3/
+[hara]:https://bookclub.kodansha.co.jp/product?item=0000149472
+[yamada]:https://www.saiensu.co.jp/search/?isbn=978-4-901683-62-3&y=2009
+[ogawa]:https://www.morikita.co.jp/books/book/445
 [taiji1]:https://www.slideshare.net/trinmu/ss-161240890
 [taiji2]:https://www.slideshare.net/trinmu/ss-237399755
