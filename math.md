@@ -14,6 +14,7 @@
 ### 記号の約束
 - $\mathbb{Q}$，$\mathbb{R}$，$\mathbb{C}$を有理数，実数，複素数とする．
 - $V$をベクトル空間とする．
+- ノルムが定義されたVをノルム空間という．
 - $\mathcal{B}$をバナッハ空間とする．
 - $\mathcal{H}$をヒルベルト空間とする．
 
@@ -22,11 +23,14 @@
 ### 内積
 
 **[Def]**<br>
-実線形空間$V$の任意の2元$f,g$に対して一つの実数(複素線形空間の場合，複素数)を対応させる関数$\langle f,g \rangle$が次の条件を満たすとき，
+実線形空間$V$の任意の2元$f,g$に対して一つの実数を対応させる関数$\langle f,g \rangle$が次の条件を満たすとき，
 関数$\langle \cdot, \cdot \rangle: V \times V \rightarrow \mathbb{R}$を内積と定義する．
 1. $\langle g, f \rangle = \langle f, g \rangle$
 1. $\langle af+bg, h \rangle = a\langle f, h \rangle + b\langle g, h \rangle$
 1. $\langle f, f \rangle \geq 0$かつ等号が成立するのは$f=0$の場合に限る．
+
+ここで，$f,g,h \in \mathcal{H}$であり，$a,b \in \mathbb{R}$である．
+(複素線形空間を考える場合，$\mathbb{C}$になおしたり適当に複素共役をとったりしてください．)
 
 内積が定義された線形空間を内積空間という．
 内積空間にはノルムを定義することができる．
@@ -35,13 +39,14 @@ $$
 ||f|| = \sqrt{\langle f, f \rangle}
 $$
 と定義するとき，これを内積から自然に導かれるノルムという．
-内積空間は$||f||$に関してノルム空間になる．
+内積空間は$||f||$に関してノルム空間になり，このノルムに関して距離空間になる．
 
 ---
 
 ### ヒルベルト空間
 **[Def]**<br>
 完備な内積空間をヒルベルト空間という．
+
 
 このスライドでは，ヒルベルト空間のうち可分なもののみを対象として考える．
 
@@ -132,3 +137,23 @@ $$
 [ogawa]:https://www.morikita.co.jp/books/book/445
 [taiji1]:https://www.slideshare.net/trinmu/ss-161240890
 [taiji2]:https://www.slideshare.net/trinmu/ss-237399755
+
+---
+### Appendix
+
+**[Def]** 完備<br>
+ノルム空間の系列$\\{ x_n \\} (n=1,2, \dots)$が$||x_n -y|| \rightarrow 0 \  (n \rightarrow \infty)$を満たすとき，
+$$
+\lim_{n \rightarrow \infty}x_n=y
+$$
+と表す．
+
+系列$\\{ x_n \\} (n=1,2, \dots)$が
+$$
+||x_m - x_n|| \rightarrow 0 \quad (m,n \rightarrow \infty)
+$$
+を満たすときコーシー列という．コーシー列が収束することを完備という．
+
+**[Def]** 可分<br>
+位相空間$X$に，高々可算かつ稠密な部分集合が存在するとき，$X$は可分であるという．
+
