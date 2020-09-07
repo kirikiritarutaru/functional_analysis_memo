@@ -23,7 +23,7 @@
 
 **[Def]**<br>
 実線形空間$V$の任意の2元$f,g$に対して一つの実数(複素線形空間の場合，複素数)を対応させる関数$\langle f,g \rangle$が次の条件を満たすとき，
-関数$\langle \cdot, \cdot \rangle$を内積と定義する．
+関数$\langle \cdot, \cdot \rangle: V \times V \rightarrow \mathbb{R}$を内積と定義する．
 1. $\langle g, f \rangle = \langle f, g \rangle$
 1. $\langle af+bg, h \rangle = a\langle f, h \rangle + b\langle g, h \rangle$
 1. $\langle f, f \rangle \geq 0$かつ等号が成立するのは$f=0$の場合に限る．
