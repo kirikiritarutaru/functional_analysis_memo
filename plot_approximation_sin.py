@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.animation as animation
 import japanize_matplotlib as jmpl
 
 jmpl.japanize()
@@ -27,4 +28,15 @@ def sigmoidal_step_approximation():
 
 
 if __name__ == '__main__':
-    sigmoidal_step_approximation()
+    # sigmoidal_step_approximation()
+
+    fig = plt.figure(figsize=(6, 4))
+
+    for i in [2, 5, 10, 20, 25, 50]:
+        x_num = 500
+        y_num = int(5*i)
+        x = np.linspace(0, 2*np.pi, x_num)
+        y = np.linspace(0, 2*np.pi, y_num)
+        plt.plot(x, np.repeat(np.sin(y), int(x_num/y_num)))
+        fig.savefig(f'step_func_{i}.jpg')
+        plt.clf()
